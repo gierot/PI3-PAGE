@@ -1,0 +1,317 @@
+body
+{
+    font-family: Nunito, sans-serif;
+    color: #1c1c1c;
+}
+h1, h2, h3 
+{
+    font-family: Asap, sans-serif;
+    color: #000000;
+}
+.botao
+{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #191970;
+    font-size: .9em;
+    border-radius: 3px;
+}
+
+/*navegação*/
+
+nav
+{
+    /*definição da nav do topo*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: #191970;
+}
+nav > a
+{
+    /*Definção dos links da nav para acessar as abas*/
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 32px;
+    font-family: Yellowtail, serif;
+}
+nav ul
+{
+    /*Lista de abas a ser acessada*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+nav ul li 
+{
+    /*definição da lista de abas*/
+    text-align: center;
+    width: 100%;
+}
+nav ul li a
+{
+    /*definição da formatação dos links*/
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+}
+header
+{
+    /*definição da aba principal*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../teste/img/starfall-gif-46.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+} 
+header h1
+{
+    /*definição da cor da fonte usada na aba principal*/
+    color: #ffffff;
+}
+header p
+{
+    /*definição do espaçamento feito dos termos dentro da aba principal*/
+    margin-bottom: 2em;
+}
+#sobre
+{
+    /*definição da desrição dos termos*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 20px 20px;
+    background-color: black;
+    color: #ffffff;
+}
+#sobre h2
+{
+    /*Cor da fonte usada na chamada dos termos*/
+    color:#ffffff;
+}
+#sobre p
+{
+    /*espaçamento e limite de tamanho para titulos dos termos*/
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+}
+#sobre .botao 
+{
+    /*definição da cor da fonte e de fundo usada na chamada de termo*/
+    background-color: #f1f1f1;
+    color: #1c1c1c;
+}
+#servicos
+{
+    /*definição do posicionamento e tamanho dos serviços*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+#servico div
+{
+    /*definição das informações dentro da minha div de serviços*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+.grafic
+{
+    display: flex;
+    align-items: center;
+    height: 600px;
+    background-color: white;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 25px;
+}
+#fotos
+{
+    /*definição do tamanho padrão para apresentação de uma imagem*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+#fotos h2
+{
+    /*espaçamento de uma imagewm para outra*/
+    margin-bottom: 20px;
+}
+#fotos img
+{
+    /*definiçõ do tamanho da imagem*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+#contato
+{
+    /*definição dos termos dentro da div de contatos*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+#contato 
+{
+    /*definição da cor utilizada na fonte*/
+    color: white;
+}
+footer
+{
+    /*definição do posicionamento da ultima aba da pagina*/
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: #ffffff;
+}
+footer a
+{
+    /*definição dos links dentro da nossa ultima aba da pagina */
+    text-decoration: none;
+    color: #00ffff;
+}
+@media screen and (min-width:768px)
+{
+    /*limitador de tamaho da nav*/
+    nav
+    {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav ul
+    {
+        /*limitador de tamanho dentro da lista*/
+        flex-direction: row;
+        width: 70%;
+    }
+    /*cabeçalho*/
+
+    header
+    {
+        /*dlimtador de tamamho da aba prncipal*/
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+    #sobre
+    {
+        /*limitadr de tamanho de termos sobre*/
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+    #servico
+    {
+        /*]limitador de tamamnho dos serviços */
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    #servico h2
+    {
+        /*limtador de tamanho do meu titulo de serviços*/
+        text-align: center;
+        width: 100%;
+        color: white;
+    }
+    #servico div
+    {
+        /*limtador de tamanho da div de serviços*/
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+    #fotos
+    {
+        /*limitador de ta,aho das fotos*/
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #fotos h2
+    {
+        /*limitador de tamanho do tituo das fotos*/
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+    #fotos img
+    {
+        /*limitador da resolução das fotos*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #contato
+    {
+        /*limitadr de tamahno da imagem de contato*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    #contato h2, #contatp p
+    {
+        /*limitadr de tamamho do titulo*/
+        width: 100%;
+        color: white;
+
+    }
+}
+.mudar-cor 
+{
+    -webkit-animation: mudar-cor 6s linear infinite alternate both;
+    animation: mudar-cor 6s linear infinite alternate both;
+}
+
+
+@-webkit-keyframes mudar-cor {
+    0% {
+        background: #191970;
+    }
+
+    100% {
+        background: #830202;
+    }
+}
+
+@keyframes mudar-cor {
+    0% {
+        background: #191970;
+    }
+
+    100% {
+        background: #830202;
+    }
+}
+#temperatura 
+{
+    width: 100%;
+    height: 500px;
+}
